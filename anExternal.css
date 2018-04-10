@@ -1,0 +1,44 @@
+body {
+    background-color: lightblue;
+	text-align: center;
+	margin: 10px;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+p {
+    font-family: verdana;
+    font-size: 20px;
+}
+roundBorder{
+    border-radius: 25px;
+    background: #73AD21;
+	font-size: 50px;
+}
+img {
+    margin: 20px;
+}
+dotted {
+	border-style: dotted;
+	width:auto;
+	font-size: 30px;
+}
+.container {
+	float: right;
+    position: relative;
+    text-align: center;
+}
+
+.text {
+	position: absolute;
+    top: 50%;
+    left: 50%;
+	color: blue;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	font-size: 30px;
+	transform: translate(-50%, -50%);
+}
