@@ -1,0 +1,767 @@
+
+
+<html>
+<head>
+	<meta NAME="GENERATOR" Content="Microsoft Visual Studio 6.0">
+	<title>Registration</title>
+	<link REL="stylesheet" TYPE="text/css" HREF="https://www.washington.edu/home/home.css">
+	<link rel="stylesheet" type="text/css" href="/sisStudents/css/default.css">
+	<style type="text/css">
+		div.waitClass	 { position:absolute; font-size:large; text-align: center;}
+		div.readyClass	 { position:absolute; visibility:hidden;}
+	</style>
+	<script type='text/javascript' src="/sisLibrary2/javascript/cookie.js"></script>
+</head>
+<body onload="self.focus(); initPage(); return true;">
+
+<div id='waitDiv' class='waitClass'>
+<p><br>&nbsp;<br>
+<table border='0' cellpadding='0' cellspacing='0'  width='100%'>
+<tr><td align='center' valign='middle'>
+<table width='60%' border='3' bordercolor='#e90000' cellpadding='20'><tr><td align='center'><h3><i>Please wait while your request is being processed . . . .</i></h3></td></tr>
+</table>
+</td></tr></table></p>
+</div>
+<div id='doneDiv' class='readyClass'>
+<table border='0' cellpadding='0' cellspacing='0' width='100%' align='center'>
+<tr>
+	<td width='100%' class='rpad'>
+		<a href='http://www.washington.edu/' target='_top'><img src='/sdb_library/images/UWlogoWtext.gif' border='0' width='283' height='25' alt='University of Washington'></a>
+	</td>
+	<td rowspan='2' valign='bottom'>
+
+<table border='0' cellpadding='0' cellspacing='0'>
+<tr><td colspan='2' bgcolor='#666666'><img src='/sdb_library/images/1px_transparent.gif' height='1'></td></tr>
+<tr>
+	<td bgcolor='#666666'><img src='/sdb_library/images/1px_transparent.gif' width='7' height='1'></td>
+	<td nowrap><span class='l1text'>
+&nbsp;<font color='#9999cc' face='tahoma,sans-serif,arial,helvetica' style='font-size:110%'><b>Student Personal Services</b></font>&nbsp;<span class='noprint'> | <a href='/ForceAuth/Shibboleth.sso/Logout'>Logout</a>&nbsp;</span>	</span></td>
+</tr>
+</table>
+
+	</td>
+</tr>
+<tr>
+	<td bgcolor='#666666'><img src='/sdb_library/images/1px_transparent.gif' height='1'></td>
+</tr>
+</table>
+<table border='0' cellpadding='0' cellspacing='0' width='100%'>
+<tr>
+	<td bgcolor='#e6e6e6'><img src='/sdb_library/images/1px_transparent.gif' width='1' height='5'></TD>
+</tr>
+</table>
+<span class='noprint'>
+<table border='0' cellpadding='0' cellspacing='0'>
+<tr>
+<td nowrap>&#183; <a href='https://sdb.admin.uw.edu/students/uwnetid/register.asp' CLASS='barnav'><font color='#333399'><b>Registration</b></font></a></td>
+<td nowrap> &nbsp; &#183; <a href='https://sdb.admin.uw.edu/sisStudents/uwnetid/grades.aspx' CLASS='barnav'><font color='#333399'>Grade Inquiry</font></a></td>
+<td nowrap> &nbsp; &#183; <a href='https://sdb.admin.uw.edu/students/uwnetid/dars.asp' CLASS='barnav'><font color='#333399'>DARS - Degree Audit</font></a></td>
+<td nowrap> &nbsp; &#183; <a href='https://sdb.admin.uw.edu/sisStudents/uwnetid/finaidstatus.aspx' CLASS='barnav'><font color='#333399'>Financial Aid Status</font></a></td>
+<td nowrap> &nbsp; &#183; <a href='https://sdb.admin.uw.edu/sisStudents/uwnetid/tuition.aspx' CLASS='barnav'><font color='#333399'>Tuition Statement</font></a></td>
+</tr>
+<tr>
+<td nowrap>&#183; <a href='https://sdb.admin.uw.edu/sisStudents/uwnetid/schedule.aspx' CLASS='barnav'><font color='#333399'>Class Schedule</font></a></td>
+<td nowrap> &nbsp; &#183; <a href='https://sdb.admin.uw.edu/sisStudents/uwnetid/untranscript.aspx' CLASS='barnav'><font color='#333399'>Unofficial Transcript</font></a></td>
+<td nowrap> &nbsp; &#183; <a href='https://sdb.admin.uw.edu/sisStudents/uwnetid/address.aspx' CLASS='barnav'><font color='#333399'>Change of Address</font></a></td>
+<td nowrap> &nbsp; &#183; <a href='https://sdb.admin.uw.edu/sisStudents/uwnetid/directdeposit.aspx' CLASS='barnav'><font color='#333399'>Direct Deposit Transfer</font></a></td>
+<td nowrap> &nbsp; &#183; <a href='https://sdb.admin.uw.edu/sisStudents/uwnetid/ccpay.aspx' CLASS='barnav'><font color='#333399'>Credit Card Payment</font></a></td>
+</tr>
+<tr>
+<td nowrap>&#183; <a href='https://sdb.admin.uw.edu/sisStudents/uwnetid/vschedule.aspx' CLASS='barnav'><font color='#333399'>Visual Schedule</font></a></td>
+<td nowrap> &nbsp; &#183; <a href='https://sdb.admin.uw.edu/sisStudents/uwnetid/transcript.aspx' CLASS='barnav'><font color='#333399'>Official Transcript</font></a></td>
+<td nowrap> &nbsp; &#183; <a href='https://sdb.admin.uw.edu/sisStudents/uwnetid/op_charges.aspx' CLASS='barnav'><font color='#333399'>Insurance/Optional Charges</font></a></td>
+<td nowrap> &nbsp; &#183; <a href='https://sdb.admin.uw.edu/sisStudents/uwnetid/shorttermloan.aspx' CLASS='barnav'><font color='#333399'>Short-Term Loan</font></a></td>
+</table>
+</span>
+<script type='text/javascript'><!--
+CookieSet('selectedRegisQYYYY_lp36','32018',20,'/');
+--></script>
+<TABLE WIDTH="90%" BORDER=0 CELLPADDING=3>
+<TR>
+<TD WIDTH="70%" VALIGN=TOP><h1 style='padding-top:20px;'>Registration - Summer 2018</h1>
+<FORM METHOD="post" ACTION="register.asp" id=qtrform name=qtrform>
+<SELECT NAME="QYYYY" >
+<OPTION VALUE="00000">&nbsp;Select a different quarter&nbsp;</OPTION>
+<OPTION VALUE="22018">&nbsp;Spring</OPTION>
+</SELECT>
+<INPUT TYPE=HIDDEN NAME=INPUTFORM VALUE="QTRCHG">
+<INPUT TYPE="submit" VALUE="Change Quarter">
+</FORM>
+<p>
+<TABLE BORDER=0 CELLPADDING=2>
+<TR><TH ALIGN=left>Prepared for:</TH><TD>Lizhi Peng                                   </TD></TR>
+<TR><TH ALIGN=left>Prepared on:</TH><TD>April 30, 2018 at 4:07 p.m.</TD></TR>
+<tr><th align='left' valign='top' nowrap>Intended Major:</th><td>Computer Science,&nbsp;&nbsp;Informatics&nbsp;&nbsp;(<a href="/sisStudents/uwnetid/prefmajor.aspx">change selection</a>)</td>
+</tr>
+</TABLE></p>
+</TD>
+<TD WIDTH="20%">
+<TABLE BORDER=0 CELLPADDING=3 CELLSPACING=0>
+<TR BGCOLOR="#DDDDFF"><TD NOWRAP ALIGN=CENTER><FONT CLASS="navlinkbig">&nbsp;Registration&nbsp;Resources&nbsp;</FONT><BR>
+<FONT CLASS="navlink">(will open in new window)</FONT></TD></TR>
+ <TR BGCOLOR="#FOFOFO"><TD NOWRAP> <A HREF="http://www.washington.edu/students/timeschd/SUM2018/" TARGET="_TS"> <FONT CLASS="navlink">Time Schedule</FONT></A><BR>
+ <A HREF="/TimeSchd/UWNetID/findschd.asp?QTRYR=32018" TARGET="FindSchd"> <FONT CLASS="navlink">Schedule Finder</FONT></A><BR>
+ <A HREF="http://notify.uw.edu" TARGET="_notify" title="Sign up for course availability notifications."  <FONT CLASS="navlink">Notify.UW</FONT></A><BR>
+ <A HREF="http://www.washington.edu/students/crscat/" TARGET="_CRSCAT"> <FONT CLASS="navlink">Course Catalog</FONT></A><BR>
+ <A HREF="http://www.washington.edu/students/reg/calendar.html" TARGET="_REGCAL"> <FONT CLASS="navlink">Academic Calendar</FONT></A><BR>
+ <A HREF="http://www.washington.edu/students/reg/Su2018exam.html" TARGET="_EXAM"> <FONT CLASS="navlink">Final Exam Schedule</FONT></A><BR>
+ <A HREF="http://www.washington.edu/students/timeschd/genedinq.html" TARGET="_GENED"> <FONT CLASS="navlink">General Education Search</FONT></A><BR>
+ <A HREF="http://www.washington.edu/students/ugrad/advising/secrets.html" TARGET="_TIPS"> <FONT CLASS="navlink">Tips for Closed Classes</FONT></A><BR>
+ <A HREF="http://www.washington.edu/admin/pb/home/opb-tuition.htm" TARGET="_TUIT"> <FONT CLASS="navlink">Tuition Rates</A></FONT><BR>
+ <A HREF="http://www.washington.edu/students/" TARGET="_SGR"> <FONT CLASS="navlink">Student Guide</A></FONT><BR>
+</TD></TR>
+</TABLE>
+</TD></TR>
+</TABLE>
+
+<BR><B><IMG BORDER=0 ALIGN=MIDDLE HSPACE=5 SRC="/sdb_library/images/success.gif" ALT="OK">Schedule updated.</B><BR><FORM METHOD="post" ACTION="register.asp" id='regform' name='regform'>
+<INPUT TYPE=HIDDEN NAME=INPUTFORM VALUE="UPDATE">
+<INPUT TYPE=HIDDEN NAME=YR VALUE=2018>
+<INPUT TYPE=HIDDEN NAME=QTR VALUE=3>
+<input type='hidden' name='_CW' value='a9ec58c858aeb6756634b0f64351ee3ac1d68ee234616aa9be8a817da9cd94b4'><p><b>Your current schedule:</b><br>
+<TABLE BORDER='1' CELLPADDING='3' class='sps_table'>
+<TR BGCOLOR="#d0d0d0">
+<TH ROWSPAN='2'>Drop<BR>from<BR>schedule</TH>
+<TH ROWSPAN='2'>SLN</TH>
+<TH ROWSPAN='2'>Course</TH>
+<TH ROWSPAN='2'>Type</TH>
+	<TH ROWSPAN=2><FONT SIZE=-2>T<BR>E<BR>R<BR>M</FONT></TH>
+<TH ROWSPAN='2'>Credits</TH>
+<TH ROWSPAN='2'><A HREF="http://www.washington.edu/students/gencat/front/Grading_Sys.html", TARGET="_GS">Grading<BR>Option</A></TH>
+<TH ROWSPAN='2'>Title</TH>
+<TH COLSPAN='4'>Meetings</TH>
+</TR>
+<TR BGCOLOR="#d0d0d0">
+<TH>Days</TH>
+<TH>Time</TH>
+<TH>Location</TH>
+<TH>Instructor</TH>
+</TR>
+<TR>
+<TD NOWRAP ALIGN=CENTER><INPUT TYPE=CHECKBOX NAME=action1 VALUE='D'></TD>
+<INPUT TYPE=HIDDEN NAME=entcode1 VALUE="">
+<INPUT TYPE=HIDDEN NAME=sln1 VALUE=11915>
+<INPUT TYPE=HIDDEN NAME=dup1 VALUE= >
+<INPUT TYPE=HIDDEN NAME=credits1>
+	<TD ALIGN='center'><TT>11915 </TD>
+	<TD NOWRAP><TT>JAPAN 134 A  </TD>
+<TD ALIGN='center'><TT>LC </TD>
+	<TD><TT>&nbsp;</TD>
+	<TD ALIGN='center'><TT>15.0 </TD>
+	<TD ALIGN=left><TT><INPUT TYPE=RADIO NAME=gr_sys1 ID=gr_sys_dec1 VALUE="decnochange" CHECKED>standard<BR>
+<INPUT TYPE=RADIO NAME=gr_sys1 ID=gr_sys_sns1 VALUE='snschange' onClick=snsWarning(1,2)>S/NS
+</TD>
+	<TD><TT><A HREF="http://www.washington.edu/students/crscat/japanese.html#japan134" TARGET="_JAPAN134">FIRST-YR INTEN JAPN</A></TD>
+	<TD NOWRAP><TT>MTWThF</TD>
+	<TD NOWRAP><TT>&nbsp;830-1040</TD>
+	<TD NOWRAP><TT><A HREF="http://www.washington.edu/students/maps/map.cgi?GUG" TARGET="_GUG"TITLE="campus map">GUG</A> 218</TD>
+	<TD NOWRAP><TT>NISHIKAWA,ITSUKO&nbsp;</TD>
+</TR>
+<TR>
+<TD NOWRAP ALIGN=CENTER><INPUT TYPE=CHECKBOX NAME=action2 VALUE='D'></TD>
+<INPUT TYPE=HIDDEN NAME=entcode2 VALUE="">
+<INPUT TYPE=HIDDEN NAME=sln2 VALUE=11916>
+<INPUT TYPE=HIDDEN NAME=dup2 VALUE= >
+<INPUT TYPE=HIDDEN NAME=credits2>
+	<TD ALIGN='center'><TT>11916 </TD>
+	<TD NOWRAP><TT>JAPAN 134 AA </TD>
+<TD ALIGN='center'><TT>QZ </TD>
+	<TD><TT>&nbsp;</TD>
+   <TD ALIGN='center'><TT>&nbsp;</TD>
+	<TD ALIGN=left><TT>&nbsp;</TD>
+	<TD><TT><A HREF="http://www.washington.edu/students/crscat/japanese.html#japan134" TARGET="_JAPAN134">FIRST-YR INTEN JAPN</A></TD>
+	<TD NOWRAP><TT>MTWThF</TD>
+	<TD NOWRAP><TT>1050-&nbsp;100</TD>
+	<TD NOWRAP><TT><A HREF="http://www.washington.edu/students/maps/map.cgi?GUG" TARGET="_GUG"TITLE="campus map">GUG</A> 218</TD>
+	<TD NOWRAP><TT>&nbsp;&nbsp;</TD>
+</TR>
+<TR></TR>
+<TR>
+<TD ALIGN='right' COLSPAN='6'><TT>Total credits: 15.0&nbsp;</TD>
+<TD ALIGN=right COLSPAN=6> <A HREF="/students/UWNetID/vschedule.asp?Q=3" TARGET="_V_SCHED">Display Visual Schedule</A>
+&nbsp; &nbsp; &nbsp;<A HREF="/textbooks/query.asp?qtr=Summer&sln1=11915&sln2=11916" TARGET="_tb">Display Textbooks</A></TD></TR>
+</TABLE></p>
+<P><B>Add the following sections:</B><BR>
+<TABLE BORDER='1' CELLPADDING='3' class='sps_table'>
+<TR BGCOLOR="#d0d0d0">
+	<TH>SLN</TH>
+ <TH><A HREF="http://www.washington.edu/students/reg/regopt.html#Q1", TARGET="_REGOPT">Add Code or<BR>Faculty Number</A></TH>
+ <TH>Credits<BR>(for variable-credit courses)</TH>
+ <TH>Check to select<BR><A HREF="http://www.washington.edu/students/gencat/front/Grading_Sys.html", TARGET="_GS">S/NS grading</A></TH>
+<TH>Course Name</TH>
+ <TH>Status</TH>
+
+<TR>
+<INPUT TYPE=HIDDEN NAME=action3 VALUE="A">
+<TD ALIGN=CENTER><INPUT TYPE=TEXT SIZE=5 MAXLENGTH=5 NAME=sln3 VALUE="" ></TD>
+<TD ALIGN=CENTER><INPUT TYPE=TEXT SIZE=5 MAXLENGTH=5 NAME=entcode3 VALUE="" ></TD>
+<TD ALIGN=CENTER><INPUT TYPE=TEXT SIZE=4 MAXLENGTH=2 NAME=credits3 VALUE="" ></TD>
+<TD ALIGN=CENTER><INPUT TYPE=CHECKBOX VALUE="sns" NAME=gr_sys3  onClick=snsWarning(3,1) ></TD>
+<INPUT TYPE=HIDDEN SIZE=1 NAME=dup3 VALUE=" ">
+<TD ALIGN=CENTER><INPUT TYPE=TEXT list="course" NAME=sln3 VALUE="" ></TD>
+<TD> &nbsp; <BR></TD>
+</TR>
+<TR>
+<INPUT TYPE=HIDDEN NAME=action4 VALUE="A">
+<TD ALIGN=CENTER><INPUT TYPE=TEXT SIZE=5 MAXLENGTH=5 NAME=sln4 VALUE="" ></TD>
+<TD ALIGN=CENTER><INPUT TYPE=TEXT SIZE=5 MAXLENGTH=5 NAME=entcode4 VALUE="" ></TD>
+<TD ALIGN=CENTER><INPUT TYPE=TEXT SIZE=4 MAXLENGTH=2 NAME=credits4 VALUE="" ></TD>
+<TD ALIGN=CENTER><INPUT TYPE=CHECKBOX VALUE="sns" NAME=gr_sys4  onClick=snsWarning(4,1) ></TD>
+<INPUT TYPE=HIDDEN SIZE=1 NAME=dup4 VALUE=" ">
+<TD ALIGN=CENTER><INPUT TYPE=TEXT list="course" NAME=sln3 VALUE="" ></TD>
+<TD> &nbsp; <BR></TD>
+</TR>
+<TR>
+<INPUT TYPE=HIDDEN NAME=action5 VALUE="A">
+<TD ALIGN=CENTER><INPUT TYPE=TEXT SIZE=5 MAXLENGTH=5 NAME=sln5 VALUE="" ></TD>
+<TD ALIGN=CENTER><INPUT TYPE=TEXT SIZE=5 MAXLENGTH=5 NAME=entcode5 VALUE="" ></TD>
+<TD ALIGN=CENTER><INPUT TYPE=TEXT SIZE=4 MAXLENGTH=2 NAME=credits5 VALUE="" ></TD>
+<TD ALIGN=CENTER><INPUT TYPE=CHECKBOX VALUE="sns" NAME=gr_sys5  onClick=snsWarning(5,1) ></TD>
+<INPUT TYPE=HIDDEN SIZE=1 NAME=dup5 VALUE=" ">
+<TD ALIGN=CENTER><INPUT TYPE=TEXT list="course" NAME=sln3 VALUE="" ></TD>
+<TD> &nbsp; <BR></TD>
+</TR>
+<TR>
+<INPUT TYPE=HIDDEN NAME=action6 VALUE="A">
+<TD ALIGN=CENTER><INPUT TYPE=TEXT SIZE=5 MAXLENGTH=5 NAME=sln6 VALUE="" ></TD>
+<TD ALIGN=CENTER><INPUT TYPE=TEXT SIZE=5 MAXLENGTH=5 NAME=entcode6 VALUE="" ></TD>
+<TD ALIGN=CENTER><INPUT TYPE=TEXT SIZE=4 MAXLENGTH=2 NAME=credits6 VALUE="" ></TD>
+<TD ALIGN=CENTER><INPUT TYPE=CHECKBOX VALUE="sns" NAME=gr_sys6  onClick=snsWarning(6,1) ></TD>
+<INPUT TYPE=HIDDEN SIZE=1 NAME=dup6 VALUE=" ">
+<TD ALIGN=CENTER><INPUT TYPE=TEXT list="course" NAME=sln3 VALUE="" ></TD>
+<TD> &nbsp; <BR></TD>
+</TR>
+<TR>
+<INPUT TYPE=HIDDEN NAME=action7 VALUE="A">
+<TD ALIGN=CENTER><INPUT TYPE=TEXT SIZE=5 MAXLENGTH=5 NAME=sln7 VALUE="" ></TD>
+<TD ALIGN=CENTER><INPUT TYPE=TEXT SIZE=5 MAXLENGTH=5 NAME=entcode7 VALUE="" ></TD>
+<TD ALIGN=CENTER><INPUT TYPE=TEXT SIZE=4 MAXLENGTH=2 NAME=credits7 VALUE="" ></TD>
+<TD ALIGN=CENTER><INPUT TYPE=CHECKBOX VALUE="sns" NAME=gr_sys7  onClick=snsWarning(7,1) ></TD>
+<INPUT TYPE=HIDDEN SIZE=1 NAME=dup7 VALUE=" ">
+<TD ALIGN=CENTER><INPUT TYPE=TEXT list="course" NAME=sln3 VALUE="" ></TD>
+<TD> &nbsp; <BR></TD>
+</TR>
+<TR>
+<INPUT TYPE=HIDDEN NAME=action8 VALUE="A">
+<TD ALIGN=CENTER><INPUT TYPE=TEXT SIZE=5 MAXLENGTH=5 NAME=sln8 VALUE="" ></TD>
+<TD ALIGN=CENTER><INPUT TYPE=TEXT SIZE=5 MAXLENGTH=5 NAME=entcode8 VALUE="" ></TD>
+<TD ALIGN=CENTER><INPUT TYPE=TEXT SIZE=4 MAXLENGTH=2 NAME=credits8 VALUE="" ></TD>
+<TD ALIGN=CENTER><INPUT TYPE=CHECKBOX VALUE="sns" NAME=gr_sys8  onClick=snsWarning(8,1) ></TD>
+<INPUT TYPE=HIDDEN SIZE=1 NAME=dup8 VALUE=" ">
+<TD ALIGN=CENTER><INPUT TYPE=TEXT list="course" NAME=sln3 VALUE="" ></TD>
+<TD> &nbsp; <BR></TD>
+</TR>
+<TR>
+<INPUT TYPE=HIDDEN NAME=action9 VALUE="A">
+<TD ALIGN=CENTER><INPUT TYPE=TEXT SIZE=5 MAXLENGTH=5 NAME=sln9 VALUE="" ></TD>
+<TD ALIGN=CENTER><INPUT TYPE=TEXT SIZE=5 MAXLENGTH=5 NAME=entcode9 VALUE="" ></TD>
+<TD ALIGN=CENTER><INPUT TYPE=TEXT SIZE=4 MAXLENGTH=2 NAME=credits9 VALUE="" ></TD>
+<TD ALIGN=CENTER><INPUT TYPE=CHECKBOX VALUE="sns" NAME=gr_sys9  onClick=snsWarning(9,1) ></TD>
+<INPUT TYPE=HIDDEN SIZE=1 NAME=dup9 VALUE=" ">
+<TD ALIGN=CENTER><INPUT TYPE=TEXT list="course" NAME=sln3 VALUE="" ></TD>
+<TD> &nbsp; <BR></TD>
+</TR>
+<TR>
+<INPUT TYPE=HIDDEN NAME=action10 VALUE="A">
+<TD ALIGN=CENTER><INPUT TYPE=TEXT SIZE=5 MAXLENGTH=5 NAME=sln10 VALUE="" ></TD>
+<TD ALIGN=CENTER><INPUT TYPE=TEXT SIZE=5 MAXLENGTH=5 NAME=entcode10 VALUE="" ></TD>
+<TD ALIGN=CENTER><INPUT TYPE=TEXT SIZE=4 MAXLENGTH=2 NAME=credits10 VALUE="" ></TD>
+<TD ALIGN=CENTER><INPUT TYPE=CHECKBOX VALUE="sns" NAME=gr_sys10  onClick=snsWarning(10,1) ></TD>
+<INPUT TYPE=HIDDEN SIZE=1 NAME=dup10 VALUE=" ">
+<TD ALIGN=CENTER><INPUT TYPE=TEXT list="course" NAME=sln3 VALUE="" ></TD>
+<datalist id="course">
+  <option>Japanese 134</option>
+  <option>English 131</option>
+  <option>CSE 143</option>
+  <option>Econ 200</option>
+  <option>Info 101</option>
+</datalist>
+<TD> &nbsp; <BR></TD>
+</TR>
+</TABLE></p><BR><INPUT TYPE=HIDDEN NAME=maxdrops VALUE=2>
+<INPUT TYPE=HIDDEN NAME=maxadds VALUE=8>
+<INPUT TYPE="submit" VALUE=' Update Schedule 'onClick="return editFormInput()">
+</FORM>
+<br><p>Please <A HREF='http://www.washington.edu/students/ps/feedback.html', TARGET='_FEEDBACK'>let us know</A>	if you encounter a problem with this service, or have a suggestion for how it might be improved.</p><!-- copied from sisLibrary2.PageBase.UWFooter code, less the 'logout-warning' css class -->
+<table class="noprint" style="margin-top:10px" align="center">
+	<tr>
+		<td><img src="/sisLibrary2/images/exclamation-in-circle_48px.png"></td>
+		<td style="font-size:90%;text-align:center">
+			To prevent unauthorized use of your UW NetID and protect your privacy,<br/>
+			<a title="Log Out" href="https://weblogin.washington.edu/logout/"><b>LOG OUT</b></a>
+			and completely exit your Web browser when you finish.
+		</td>
+	</tr>
+</table>
+<P></P>
+<table border='0' cellpadding='0' cellspacing='0' align='center' width='100%'>
+<tr>
+	<td rowspan='2'>
+<a href='http://www.washington.edu/'><img src='/sdb_library/images/UWlogoBlockW.gif' border='0' height='37' width='53' hspace='5' vspace='7' alt='UW Logo'></a>
+	</td>
+	<td rowspan='3' bgcolor='#666666' width='5'><img src='/sdb_library/images/1px_transparent.gif' width='7' height='1'></td>
+	<td colspan='2' bgcolor='#666666' height='1'><img src='/sdb_library/images/1px_transparent.gif' width='1' height='1'></td>
+</tr><tr>
+<td width='100%'>
+<table border='0' width='100%'>
+<tr>
+	<td valign='top'><address>
+Office of the Registrar<br>
+regoff@uw.edu<br>
+April 30, 2018
+</address>
+	</td>
+</tr>
+</table>
+</td>
+</tr><tr height='1'>
+	<td bgcolor='#666666'><img src='/sdb_library/images/1px_transparent.gif' width='1' height='1'></td>
+</tr>
+</table>
+</div>
+
+</body>
+</html>
+
+<script LANGUAGE="JavaScript">
+<!--
+window.name = "Registration";
+/*************************** CLIENT-SIDE SCRIPTS ******************************/
+/******************************************************************************/
+var timer;
+/******************************************************************************
+* displayTimeRemain
+*	This function is initiated with a setInterval in the initPage function. 
+*	It updates the remaining time displayed on the page in the timeRemain form
+*	field.
+******************************************************************************/
+function displayTimeRemain(iMSecsEnd)
+{
+	var elem, iDisplaySecs,iMin, iSec, sMin, sSec, oNoTime, oRemain;
+	
+	var	oDate = new Date();
+	var	iMSecsNow = oDate.getTime();
+	
+	if (document.getElementById){
+		if (document.getElementById('txtTimeRemain')){
+			elem = document.getElementById('txtTimeRemain');
+		}
+	}else if (document.all){
+		if (document.all['txtTimeRemain']){
+			elem = document.all['txtTimeRemain'];
+		}
+	}else if (document.layers){
+		if (document.layers['txtTimeRemain']){
+			elem = document.layers['txtTimeRemain'];
+		}
+	}	
+	
+	if (elem){
+		iDisplaySecs = Number(iMSecsEnd) - iMSecsNow;
+		if (iDisplaySecs > 1000){
+			oNoTime = new Date(oDate.setHours(00,00,00)); 
+			oRemain = new Date(oNoTime.setTime(oNoTime.getTime() + iDisplaySecs)); 
+			sMin = " " + String(oRemain.getMinutes());
+			iSec = oRemain.getSeconds();
+			sSec = String(iSec);
+			iSec = oRemain.getSeconds();
+			if (iSec < 10){
+				sSec = "0" + String(iSec);
+			}
+			elem.value = sMin + ":" + sSec;
+		}else{
+			elem.value = "It's time!";
+			clearInterval(timer);
+			return(false);
+		}
+	}
+	return (true);
+}
+
+/******************************************************************************
+* initPage
+*	This function handles flipping the divs when 'processing please wait' 
+*	is displayed and also handles starting the timer when the reject feature is
+*	employed. This function is triggered by the onload event of the body of the
+*	response.
+******************************************************************************/
+function initPage()
+{
+	var oWait, oDone, elem, timer, sMin, iMin, sSec, iSec, oDate, oNoTime, oRemain;
+	if (document.getElementById){
+		if (document.getElementById('waitDiv')){
+			oWait = document.getElementById('waitDiv').style;
+			oDone = document.getElementById('doneDiv').style;
+		}
+	}else if (document.all){
+		if (document.all['waitDiv']){
+			oWait = document.all['waitDiv'].style;
+			oDone = document.all['doneDiv'].style;
+		}
+	}else if (document.layers){
+		if (document.layers['waitDiv']){
+			oWait = document.layers['waitDiv'];
+			odone = document.layers['doneDiv'];
+		}
+	}
+	
+	if (oWait && oDone){
+		oWait.visibility = 'hidden';
+		oDone.visibility = 'visible';
+	}
+
+	if (document.getElementById){
+		if (document.getElementById('txtTimeRemain')){
+			elem = document.getElementById('txtTimeRemain');
+		}
+	}else if (document.all){
+		if (document.all['txtTimeRemain']){
+			elem = document.all['txtTimeRemain'];
+		}
+	}else if (document.layers){
+		if (document.layers['txtTimeRemain']){
+			elem = document.layers['txtTimeRemain'];
+		}
+	}	
+	if (elem){
+		iMSecsDelay = Number(elem.value) * 60 * 1000;
+		oDate = new Date();
+		oEndTime = new Date(oDate.setTime(oDate.getTime() + iMSecsDelay));	
+		iMSecsEnd = oEndTime.getTime();
+		oNoTime = new Date(oDate.setHours(00,00,00));
+		oRemain = new Date(oNoTime.setTime(oNoTime.getTime() + iMSecsDelay)); 
+		sMin = " " + String(oRemain.getMinutes());
+		iSec = oRemain.getSeconds();
+		sSec = String(iSec);
+		iSec = oRemain.getSeconds();
+		if (iSec < 10){
+			sSec = "0" + String(iSec);
+		}
+		elem.value = sMin + ":" + sSec;
+		
+		if (iMSecsEnd > 1000){
+			timer = setInterval("displayTimeRemain(iMSecsEnd)",1000);		
+		}else{
+			elem.value = "It's time!";
+		}
+	}
+	return;
+}	
+/******************************************************************************
+* checkDelayFormInput
+*		This function is triggered by the onClick event of the Submit button.
+******************************************************************************/
+function checkDelayFormInput()
+{
+	var oDate,iTimeNow;
+	
+	if (document.getElementById){
+		if (document.getElementById('txtTimeRemain')){
+			elem = document.getElementById('txtTimeRemain');
+		}
+	}else if (document.all){
+		if (document.all['txtTimeRemain']){
+			elem = document.all['txtTimeRemain'];
+		}
+	}else if (document.layers){
+		if (document.layers['txtTimeRemain']){
+			elem = document.layers['txtTimeRemain'];
+		}
+	}	
+	if (elem){
+		if (isNaN(elem.value.substring(0,1))){
+			return(true);
+		}
+	}
+	return (false);
+}
+
+/******************************************************************************
+* editFormInput
+*		This function is triggered by the onClick event of the Submit button.
+*		It will edit the form input for basic valid values and display a 
+*		warning if the student is attempting to drop all of their classes.
+******************************************************************************/
+function editFormInput()
+{
+	var i, sMsg, sInput;
+	var f = document.regform;
+	var iMaxDrops = parseInt(f.maxdrops.value);
+	var iMaxAdds = parseInt(f.maxadds.value);
+	var sDropAll = "Y";
+	var sDropAny = "N";
+	
+	sMsg = "";	
+	
+	for (i=1; i<=iMaxDrops + iMaxAdds; i++) {	
+		if ( f["action"+i].value == "D" ) {
+			// if checked, dropping something
+			if (f["action"+i].checked) {
+				sDropAny = "Y";
+			}
+			// if not checked, not dropping all
+			else {
+				sDropAll = "N";
+			}
+			// drop edits: entry code
+			sInput = f["entcode"+i].value;
+			if ( sInput!="" && (isNaN(sInput) || (!isNaN(sInput) && parseInt(sInput)<10000) ) ) {
+				sMsg += "\"" + sInput + "\"" + " is not a valid drop code. " 
+				      + "Please enter the correct 5-digit code.";
+				alert(sMsg);
+				f["entcode"+i].focus();
+				return (false);
+			}
+			// drop edits: checkbox
+			if ( sInput!="" && !f["action"+i].checked ) {
+				sMsg += "Please check the drop box if you wish to drop SLN " 
+				      + f["sln"+i].value + ".";
+				f["action"+i].focus();
+				alert(sMsg);
+				return (false);
+			}
+		}
+		else {
+			// if an sln is being added or changed, not dropping all
+			if (!isNaN(parseInt(f["sln"+i].value))) {
+				sDropAll = "N";
+			}
+			sInput = f["sln"+i].value;
+			if ( sInput!="" && (isNaN(sInput) || (!isNaN(sInput) && parseInt(sInput)<1000) ) ) {
+				sMsg += "\"" + sInput + "\"" + " is not a valid SLN. " 
+				      + "Please enter the correct Schedule Line Number.";
+				f["sln"+i].focus();
+				alert(sMsg);
+				return (false);
+			}
+			sInput = f["entcode"+i].value;
+			if ( sInput!="" && (isNaN(sInput) || (!isNaN(sInput) && parseInt(sInput)<10000) ) ) {
+				sMsg += "\"" + sInput + "\"" + " is not a valid add code or faculty number. " 
+				      + "Please enter the correct 5-digit code.";
+				f["entcode"+i].focus();
+				alert(sMsg);
+				return (false);
+			}
+		}
+	}
+
+	if ( sDropAll == "Y"  &&  sDropAny == "Y" ) {
+		if (iMaxAdds > 0) {
+			sMsg = "WARNING: You have requested to drop all of your courses.  You will "
+				 + "be considered withdrawn for the quarter unless you subsequently add "
+				 + "courses.\n\n"
+				 + "If this is your intention, click \"OK\".  Otherwise click \"Cancel\".";
+		}
+		else {
+			sMsg = "WARNING: You have requested to drop all of your courses and withdraw "
+				 + "for the quarter.  It is past the deadline to add courses.\n\nIf you are "
+				 + "withdrawing, click \"OK\".  Otherwise click \"Cancel\".";
+		}
+		return (confirm(sMsg));	
+	}
+
+	return (true);  
+}
+
+/******************************************************************************
+* editMMNotice
+*		This function is triggered by the onClick event of the MMNotice submit button.
+******************************************************************************/
+function editMMForm() {
+	
+	var f = document.mmform;
+	var sMsg = "You must check the box to acknowledge you have\n"
+			 + "read the meningococcal meningitis notice before\n"
+			 + "you may continue with registration. ";
+	if (!f["chkMMNotice"].checked){
+		alert(sMsg);
+		return (false);	
+	}
+	
+	return (true);
+}
+/******************************************************************************
+* editVoterRegForm
+*		This function is triggered by the onClick event of the MMNotice submit button.
+******************************************************************************/
+function editVoterRegForm() {
+
+    var f = document.voterform;
+    var sMsg = "You must select either Yes or No to acknowledge you\n"
+			 + "have read the voter registration notice before you\n"
+			 + "may continue with registration. ";
+
+    if (!f.radVoterRegNotice[0].checked && 
+	    !f.radVoterRegNotice[1].checked){
+        alert(sMsg);
+        return (false);
+    } 
+    
+    return (true);
+} 
+
+/******************************************************************************
+* editRIAANotice
+*		This function is triggered by the onClick event of the RIAANotice submit button.
+******************************************************************************/
+function editRIAAForm() {
+	
+	var f = document.riaaform;
+	var sMsg = "You must check the box to acknowledge you have read\n"
+			 + "the File-Sharing and Copyright Infringement Notice\n"
+			 + " before you may continue with registration. ";
+	if (!f["chkRIAANotice"].checked){
+		alert(sMsg);
+		return (false);	
+	}
+	
+	return (true);
+}
+/******************************************************************************
+* editCleryNotice
+*		This function is triggered by the onClick event of the Clery Notice submit button.
+******************************************************************************/
+function editCleryForm() {
+	
+	var oElem;
+	var sMsg = "You must check the box to acknowledge you have\n"
+			 + " viewed the Your Safety Your Health notice before\n"
+			 + " you may continue with registration. ";
+	
+	oElem = document.getElementById('chkCleryNotice');
+	if (oElem){
+		if (!oElem.checked){
+			alert(sMsg);
+			return (false);
+		}
+	}
+	
+	return (true);
+}
+/******************************************************************************
+* editUPASSNotice
+*		This function is triggered by the onClick event of the UPASS Notice submit button.
+******************************************************************************/
+function editUPASSForm() {
+
+    var oElem;
+    var sMsg = "You must check the box to acknowledge you have\n"
+			 + " viewed the U-PASS notice before you may\n"
+			 + " continue with registration. ";
+
+    oElem = document.getElementById('chkUPASSNotice');
+    if (oElem) {
+        if (!oElem.checked) {
+            alert(sMsg);
+            return (false);
+        }
+    }
+
+    return (true);
+}
+/******************************************************************************
+* editFinLiabNotice
+*		This function is triggered by the onClick event of the Financial Liability Notice submit button.
+******************************************************************************/
+function editFinLiabForm() {
+
+    var oElem;
+    var sMsg = "You must check the box to acknowledge you have\n"
+			 + " viewed the Financial Responsibility notice before you may\n"
+			 + " continue with registration. ";
+
+    oElem = document.getElementById('chkFinLiabNotice');
+    if (oElem) {
+        if (!oElem.checked) {
+            alert(sMsg);
+            return (false);
+        }
+    }
+
+    return (true);
+}
+/******************************************************************************
+* snsWarning
+******************************************************************************/
+function snsWarning(iSub,iType) {
+	var f = document.regform;
+	var sMsg = "REMINDER: Undergraduates may only use courses graded with \n"
+			 + "the S/NS (Satisfactory/Not-Satisfactory) option to meet \n"
+             + "General Electives. Graduate students should see their adviser \n"
+             + "before selecting S/NS grading.     \n\n"												
+			 + "S/NS is not the same as CREDIT/NO CREDIT. Click on the \n"
+             + "grading option link for an explanation of the grade system.\n\n"								
+			 + "One $20 change fee is assessed for any number of change \n"
+             + "transactions made during a given day including changes to or \n"
+             + "from the S/NS grading option.\n\n"											
+			 + "Are you sure you want to take this course with the S/NS grading\n"
+             + "option?\n\n"
+			 + "NOTE: Your request to change to S/NS grading will not be \n"
+             + "processed until you click the \"Update Schedule\" button \n"
+             + "at the bottom of the page and you receive the \n"
+             + "\"Schedule updated\" confirmation message.";					
+		 	 
+	if (iType == 1) {
+		if ( f["gr_sys"+iSub].checked ) {
+			if ( !confirm(sMsg) ){
+				f["gr_sys"+iSub].checked = false;
+			}
+		}
+	}
+
+	if (iType == 2) {
+		if ( f["gr_sys_sns"+iSub].checked ) {
+			if ( !confirm(sMsg) ){
+				f["gr_sys_sns"+iSub].checked = false;
+				f["gr_sys_dec"+iSub].checked = true;
+			}
+		}
+	}
+}	
+
+
+function openWin(sWindowURL,sWindowName,iWidth,iHeight)
+{
+	if (iWidth > screen.width) {
+		iWidth = screen.width * .99;
+	}
+	if (iHeight > screen.height) {
+		iHeight = screen.height * .99;
+	}
+
+	popupWindow = open
+			(	sWindowURL,
+				sWindowName,
+				"resizable=no"
+					+	",scrollbars=yes"
+					+	",toolbar=no"
+					+	",location=no"
+					+	",directories=no"
+					+	",status=no"
+					+	",menubar=no"
+					+	",width=" + iWidth
+					+	",height=" + iHeight
+					//+	",top="+((screen.height-screen.height))
+					//+	",left="+((screen.width-screen.width))
+			);
+}
+
+
+//-->
+</script>
+<noscript>
+<div id="__Div" class="waitClass">
+<p><br>&nbsp;<br>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr><td align="center" valign="middle">
+<table width="100%" border="3" bordercolor="#e90000" cellpadding="20">
+	<tr>
+		<td align="center" bgcolor="#ffffff">
+			<h3><br><i>The Registration service requires that you enable JavaScript in your web browser. Please enable JavaScript and try again. For information on how to enable Javascript, see <a href=http://www.washington.edu/computing/web/cookiesjavascript.html>Accepting Cookies and Enabling Javascript.</a></i>
+			</h3>
+		</td>
+	</tr>
+</table>
+</td></tr></table></p>
+</div>
+</noscript>
